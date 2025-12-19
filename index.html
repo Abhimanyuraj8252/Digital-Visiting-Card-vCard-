@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Alex Chen - Digital Profile</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom SCSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Ionicons (Premium Look than FontAwesome) -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="antialiased">
+
+    <!-- Cinematic Background -->
+    <div class="bg-gradient"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="relative min-h-screen flex items-center justify-center p-4 lg:p-0">
+
+        <!-- Ultra-Premium Glass Card -->
+        <div
+            class="glass-container w-full max-w-[380px] p-6 lg:p-8 flex flex-col items-center gap-8 shadow-2xl animate-enter">
+
+            <!-- Floating Menu Dots -->
+            <div class="absolute top-6 right-6 text-white/50 cursor-pointer hover:text-white transition">
+                <ion-icon name="ellipsis-horizontal" size="large"></ion-icon>
+            </div>
+
+            <!-- Profile Section -->
+            <div class="text-center w-full mt-4">
+                <div class="profile-wrapper animate-enter delay-1">
+                    <img src="assets/profile.png" alt="Profile" class="profile-img">
+                    <div class="status-badge"></div>
+                </div>
+
+                <div class="mt-6 animate-enter delay-2">
+                    <h1 class="text-3xl tracking-tight mb-1">Alex Chen</h1>
+                    <p class="text-indigo-300 font-medium text-sm tracking-wide uppercase opacity-90">Senior Architect
+                    </p>
+
+                    <!-- Micro Tags -->
+                    <div class="flex justify-center gap-2 mt-4 flex-wrap">
+                        <span
+                            class="px-3 py-1 bg-white/5 rounded-full text-xs font-semibold text-gray-300 border border-white/5">React
+                            Native</span>
+                        <span
+                            class="px-3 py-1 bg-white/5 rounded-full text-xs font-semibold text-gray-300 border border-white/5">Three.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Grid (Iconography) -->
+            <div class="flex justify-between w-full px-2 animate-enter delay-3">
+                <a href="tel:+1234567890" class="icon-box">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+                <a href="https://wa.me/1234567890" class="icon-box">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="mailto:alex@example.com" class="icon-box">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a href="https://maps.google.com" class="icon-box">
+                    <ion-icon name="location-outline"></ion-icon>
+                </a>
+            </div>
+
+            <!-- Services Stack -->
+            <div class="w-full space-y-3 animate-enter delay-4">
+                <div class="service-pill group cursor-pointer">
+                    <div class="service-icon-small group-hover:bg-indigo-500/20 transition">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-sm text-gray-100">Web Engineering</h4>
+                        <p class="text-xs text-gray-500 mt-0.5 group-hover:text-gray-400">Scalable Systems</p>
+                    </div>
+                    <ion-icon name="chevron-forward-outline"
+                        class="text-gray-600 group-hover:text-white transition group-hover:translate-x-1"></ion-icon>
+                </div>
+
+                <div class="service-pill group cursor-pointer">
+                    <div class="service-icon-small group-hover:bg-purple-500/20 transition">
+                        <ion-icon name="prism-outline"></ion-icon>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-sm text-gray-100">UI/UX Design</h4>
+                        <p class="text-xs text-gray-500 mt-0.5 group-hover:text-gray-400">Premium Interfaces</p>
+                    </div>
+                    <ion-icon name="chevron-forward-outline"
+                        class="text-gray-600 group-hover:text-white transition group-hover:translate-x-1"></ion-icon>
+                </div>
+            </div>
+
+            <!-- Primary Actions -->
+            <div class="w-full grid grid-cols-2 gap-4 mt-2 animate-enter delay-4">
+                <button onclick="saveContact()"
+                    class="btn-primary py-4 rounded-2xl flex items-center justify-center gap-2 transition hover:-translate-y-1 active:scale-95">
+                    <ion-icon name="person-add-outline"></ion-icon>
+                    <span>Save</span>
+                </button>
+                <button onclick="shareProfile()"
+                    class="btn-glass py-4 rounded-2xl flex items-center justify-center gap-2 transition hover:-translate-y-1 active:scale-95">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                    <span>Share</span>
+                </button>
+            </div>
+
+        </div>
+
+        <footer class="fixed bottom-4 text-center w-full z-0 opacity-40 hover:opacity-100 transition duration-500">
+            <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em]">
+                <a href="pages/privacy.html" class="hover:text-white transition">Privacy</a>
+                <span class="mx-2">•</span>
+                <a href="pages/terms.html" class="hover:text-white transition">Terms</a>
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
